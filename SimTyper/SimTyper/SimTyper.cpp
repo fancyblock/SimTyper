@@ -33,7 +33,7 @@ LRESULT CALLBACK LowLevelKeyboardProc(int,WPARAM,LPARAM);
 void onKeyDown( DWORD keyVal );
 
 // setup notify icon
-void setupNotifyIcon();
+void setupNotifyIcon( bool isRemove = false );
 
 
 int APIENTRY _tWinMain(HINSTANCE hInstance,
@@ -173,6 +173,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_COMMAND:
 		if( LOWORD(wParam) == IDM_EXIT )
 		{
+			setupNotifyIcon( true );
 			PostQuitMessage(0);
 		}
 		break;
@@ -217,7 +218,7 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode,WPARAM wParam,LPARAM lParam)
 }
 
 
-void setupNotifyIcon()
+void setupNotifyIcon( bool isRemove )
 {
 	NOTIFYICONDATA nDat;
 
@@ -231,7 +232,14 @@ void setupNotifyIcon()
 	strcpy( nDat.szInfo, "Click to close" );
 	nDat.uVersion = NOTIFYICON_VERSION;
 
-	Shell_NotifyIcon( NIM_ADD, &nDat );
+	if( isRemove )
+	{
+		Shell_NotifyIcon( NIM_DELETE, &nDat );
+	}
+	else
+	{
+		Shell_NotifyIcon( NIM_ADD, &nDat );
+	}
 }
 
 
