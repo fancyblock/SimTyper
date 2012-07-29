@@ -1,0 +1,22 @@
+
+#include "Resource.h"
+#include <windows.h>
+
+
+SND_BACKSPACE WAV "../Resources/backspace.wav"
+
+//SND_KEY01     WAVE "../Resources/key-01.wav"
+//SND_KEY02     WAVE "../Resources/key-02.wav"
+//SND_KEY03     WAVE "../Resources/key-03.wav"
+//SND_KEY04     WAVE "../Resources/key-04.wav"
+SND_KEY_NEW01 WAVE "../Resources/key-new-01.wav"
+SND_KEY_NEW02 WAVE "../Resources/key-new-02.wav"
+SND_KEY_NEW03 WAVE "../Resources/key-new-03.wav"
+SND_KEY_NEW04 WAVE "../Resources/key-new-04.wav"
+SND_RETURN    WAVE "../Resources/return.wav"
+//SND_RETURN_NEW  WAVE "../Resources/return-new.wav"
+//SND_SCROLLDOWN  WAVE "../Resources/scrolldown.wav"
+//SND_SCROLLUP    WAVE "../Resources/scrollup.wav"
+SND_SPACE_NEW   WAVE "../Resources/space-new.wav"
+//SND_SPACE       WAVE "../Resources/space.wav"
+

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\wav">
+      <UniqueIdentifier>{5b8e0ba3-83b7-44d1-b0db-ae66c5136ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\icon">
+      <UniqueIdentifier>{0c94d0b6-7876-4e1e-9497-0b020e1ef6d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\Resources\backspace.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\return-new.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-01.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-02.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-03.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-04.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-new-01.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-new-02.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-new-03.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-new-04.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\key-new-05.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\return.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\scrollDown.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\scrollUp.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\space-new.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="..\Resources\space.wav">
+      <Filter>Resource Files\wav</Filter>
+    </None>
+    <None Include="ico16.ico">
+      <Filter>Resource Files\icon</Filter>
+    </None>
+    <None Include="ico32.ico">
+      <Filter>Resource Files\icon</Filter>
+    </None>
+    <None Include="ico48.ico">
+      <Filter>Resource Files\icon</Filter>
+    </None>
+    <None Include="ico64.ico">
+      <Filter>Resource Files\icon</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimTyper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimTyper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SimTyper.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="sound.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
