@@ -163,9 +163,18 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	PAINTSTRUCT ps;
 	HDC hdc;
 
+	HMENU menu;
+	HMENU subMenu;
+	POINT pt;
+	RECT rect;
+
 	switch (message)
 	{
 	case WM_COMMAND:
+		if( LOWORD(wParam) == IDM_EXIT )
+		{
+			PostQuitMessage(0);
+		}
 		break;
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps);
@@ -176,9 +185,13 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		PostQuitMessage(0);
 		break;
 	case WM_TASKMANAGE:
-		if( lParam == WM_LBUTTONDBLCLK )
+		if( lParam == WM_RBUTTONDOWN )
 		{
-			PostQuitMessage(0);
+			GetCursorPos( &pt );
+			menu = LoadMenu( hInst, MAKEINTRESOURCE( MENU_TASK_BAR ) );
+			subMenu = GetSubMenu( menu, 0 );
+
+			TrackPopupMenu( subMenu,TPM_LEFTALIGN|TPM_HORIZONTAL|TPM_VERTICAL,pt.x,pt.y, NULL, g_wnd, &rect );
 		}
 		break;
 	default:

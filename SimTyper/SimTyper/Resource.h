@@ -48,3 +48,7 @@
 #define ICON_CY32				217
 #define ICON_CY48				218
 #define ICON_CY64				219
+
+
+#define MENU_TASK_BAR			220
+#define IDM_NOTHING				221
